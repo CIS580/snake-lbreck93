@@ -14,6 +14,7 @@ var oldTime = performance.now();
  */
 function loop(newTime) {
   var elapsedTime = newTime - oldTime;
+  oldTime = newTime;
 
   update(elapsedTime);
   render(elapsedTime);
@@ -34,7 +35,8 @@ function loop(newTime) {
  * the number of milliseconds passed since the last frame.
  */
 function update(elapsedTime) {
-
+  
+  // TODO: Ask nathan about the speed fix thing.
   // TODO: Spawn an apple periodically
   // TODO: Grow the snake periodically
   // TODO: Move the snake
