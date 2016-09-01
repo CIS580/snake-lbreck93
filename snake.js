@@ -60,3 +60,14 @@ function render(elapsedTime) {
 
 /* Launch the game */
 window.requestAnimationFrame(loop);
+
+// circles
+// get location of sprites, use distance formula, but square both sides to you dont have to square root.. or take it to the 1/2 power
+// if distance formula is less than, there is overlap. equal to is collision, greater than means no collision
+// use distance formula between sprites
+//
+// squares
+// both squares must overlap on x and y axis.
+// could-- check if !(B.top < A.bottom || A.top < B.bottom || B.right < A.left || A.right < B.left)
+
+//move the body, by moving the back of the element to behind the head. 
